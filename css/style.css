@@ -115,3 +115,9 @@ button {
 .tanah.muncul .tikus {
     top: -15px;
 }
+
+body {
+    font-family: system-ui;
+    background: #ffff;
+    color: black;
+}
