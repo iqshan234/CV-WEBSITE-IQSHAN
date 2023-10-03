@@ -62,10 +62,10 @@
                         </div>
                         <div class="section">
                             <div class="container">
-                                <div class="button-container"><a class="btn btn-default btn-round btn-lg btn-icon" href="#" rel="tooltip" title="Follow me on Facebook"><i class="fa fa-facebook"></i></a>
-                                    <a class="btn btn-default btn-round btn-lg btn-icon" href="#" rel="tooltip" title="Follow me on Twitter"><i class="fa fa-twitter"></i></a>
-                                    <a class="btn btn-default btn-round btn-lg btn-icon" href="#" rel="tooltip" title="Follow me on Google+"><i class="fa fa-google-plus"></i></a><a class="btn btn-default btn-round btn-lg btn-icon" href="#" rel="tooltip"
-                                        title="Follow me on Instagram"><i class="fa fa-instagram"></i></a></div>
+                                <div class="button-container"><a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.facebook.com/priyasa.d.s/" rel="tooltip" title="Follow me on Facebook"><i class="fa fa-facebook"></i></a>
+                                    <a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.linkedin.com/in/mochammad-iqshan-augustino-50b313148/" rel="tooltip" title="Follow me on Linkedin"><i class="fa fa-linkedin"></i></a>
+                                    <a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.youtube.com/channel/UCEfdKbD-NnCbehXOe3np-7w" rel="tooltip" title="Subricbe me on Youtube"><i class="fa fa-youtube-play"></i></a><a class="btn btn-default btn-round btn-lg btn-icon"
+                                        href="https://www.instagram.com/shan8_6/" rel="tooltip" title="Follow me on Instagram"><i class="fa fa-instagram"></i></a></div>
                             </div>
                         </div>
                     </div>
@@ -109,6 +109,80 @@
                                 </div>
                             </div>
                         </div>
+                        <hr>
+                        <b><h4 style="text-align: center">Gaji Pegawai Berdasarkan Jam Kerja Perbulan</b></h4>
+        <form method="post" action="">
+            <div style="margin-left: 5%">
+                Nama Karyawan : <input type="text" name="nama" /><br /> <br />
+                Jabatan : <br> <input type="radio" name="jabatan" value="IT_Support"/> IT Support 
+                 <input type="radio" name="jabatan" value="IT_Font_End_Developer"/> IT Font End Developer 
+                 <input type="radio" name="jabatan" value="IT_Back_End_Developer"/> IT Back End Developer 
+                <input type="radio" name="jabatan" value="IT_Full_Stack_Developer"/> IT Full Stack Developer <br /><br />  
+                Jam Kerja (Jam) : <input type="text" name="jam_kerja" /> <br /><br />
+                <input type="submit" name="submit" value="Submit" />
+            </div>
+        </form>
+ 
+        <div style="margin-left: 5%">
+            <?php
+                if(isset($_POST['submit'])){
+                    $nama = $_POST['nama'];
+                    $gol = $_POST['jabatan'];
+                    $jam_kerja = $_POST['jam_kerja'];
+ 
+                    //gaji
+                    $gaji_pokok_IT_Support = $jam_kerja*4000;
+                    $gaji_pokok_IT_Font_End_Developer = $jam_kerja*5000;
+                    $gaji_pokok_IT_Back_End_Developer = $jam_kerja*6000;
+                    $gaji_pokok_IT_Full_Stack_Developer = $jam_kerja*7500;
+ 
+                    //perhitungan untuk jam lembur
+                    if($jam_kerja <= 48){
+                        $jam = $jam_kerja;
+                        $lembur = 0;
+                    }else{
+                        $jam =  48;
+                        $lembur = ($jam_kerja - $jam) * 3000;
+                    }
+ 
+                    //gaji lembur
+                    $gaji_lembur_IT_Support = 15000 * $lembur;
+                    $gaji_lembur_IT_Font_End_Developer = 20000 * $lembur;
+                    $gaji_lembur_IT_Back_End_Developer = 25500 * $lembur;
+                    $gaji_lembur_IT_Full_Stack_Developer = 30150 * $lembur;
+ 
+                    //gaji akhir yang diterima
+                    $gaji_IT_Support = $gaji_pokok_IT_Support + $gaji_lembur_IT_Support ;
+                    $gaji_IT_Font_End_Developer = $gaji_pokok_IT_Font_End_Developer + $gaji_lembur_IT_Font_End_Developer ;
+                    $gaji_IT_Back_End_Developer = $gaji_pokok_IT_Back_End_Developer + $gaji_lembur_IT_Back_End_Developer ;
+                    $gaji_IT_Full_Stack_Developer = $gaji_pokok_IT_Full_Stack_Developer + $gaji_lembur_IT_Full_Stack_Developer ;
+ 
+                    echo "Nama Karyawan  : $nama <br/> ";
+                    echo "Jabatan   : $gol <br/> ";
+                    echo "Jam Kerja : $jam_kerja <br/>";
+                    echo "Lembur : $lembur <br/>";
+ 
+                     if ($gol=='IT_Support')
+                    {
+                        printf("Gaji yang diterima : %.2f / Bulan",$gaji_IT_Support);
+                    }
+                    else if($gol=='IT_Font_End_Developer')
+                    {
+                        printf("Gaji yang diterima : %.2f / Bulan",$gaji_IT_Font_End_Developer);
+                    }
+                    else if ($gol=='IT_Back_End_Developer')
+                    {
+                        printf("Gaji yang diterima : %.2f / Bulan",$gaji_IT_Back_End_Developer);
+                    }
+                    else if ($gol=='IT_Full_Stack_Developer')
+                    {
+                        printf("Gaji yang diterima : %.2f / Bulan",$gaji_IT_Full_Stack_Developer);
+                    }
+                }
+            ?>
+        </div>
+
+
                     </div>
                 </div>
             </div>
@@ -225,6 +299,7 @@
                     </div>
                 </div>
             </div>
+           
             <div class="section" id="portfolio">
                 <div class="container">
                     <div class="row">
@@ -246,7 +321,7 @@
                                     <div class="col-md-3">
                                         <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                                             <a href="#web-development">
-                                                <figure class="cc-effect"><img src="img/1.png" alt="Image" />
+                                                <figure class="cc-effect"><img src="img/1.png" width="350" height="150px" alt="Image" />
                                                     <figcaption>
                                                         <div class="h4"></div>
                                                         <p>Website Informasi Sanggar Rias Idean</p>
@@ -256,7 +331,7 @@
                                         </div>
                                         <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                                             <a href="#web-development">
-                                                <figure class="cc-effect"><img src="img/2.png" height="150px" alt="Image" />
+                                                <figure class="cc-effect"><img src="img/2.png" width="350" height="150px" alt="Image" />
                                                     <figcaption>
                                                         <div class="h4"></div>
                                                         <p>Website Ribuan QR Code Generate Mini Gold</p>
@@ -268,7 +343,7 @@
                                     <div class="col-md-3">
                                         <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                                             <a href="#web-development">
-                                                <figure class="cc-effect"><img src="img/3.png" alt="Image" />
+                                                <figure class="cc-effect"><img src="img/3.png" width="350" height="150px" alt="Image" />
                                                     <figcaption>
                                                         <div></div>
                                                         <p size="20px">Website Merge 2 Gambar Menjadi 1 & Munculin Ribuan Gambar Hasil Merge</p>
@@ -278,7 +353,7 @@
                                         </div>
                                         <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                                             <a href="#web-development">
-                                                <figure class="cc-effect"><img src="img/4.png" height="150px" alt="Image" />
+                                                <figure class="cc-effect"><img src="img/4.png" width="350" height="150px" alt="Image" />
                                                     <figcaption>
                                                         <div class="h4"></div>
                                                         <p>Website Store Elektoronik</p>
@@ -290,7 +365,7 @@
                                     <div class="col-md-3">
                                         <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                                             <a href="#web-development">
-                                                <figure class="cc-effect"><img src="img/5.png" height="150px" alt="Image" />
+                                                <figure class="cc-effect"><img src="img/5.png" width="350" height="150px" alt="Image" />
                                                     <figcaption>
                                                         <div class="h4"></div>
                                                         <p>Website Search Engine Movie</p>
@@ -300,7 +375,7 @@
                                         </div>
                                         <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                                             <a href="#web-development">
-                                                <figure class="cc-effect"><img src="img/6.png" alt="Image" />
+                                                <figure class="cc-effect"><img src="img/6.png" width="350" height="150px" alt="Image" />
                                                     <figcaption>
                                                         <div class="h4"></div>
                                                         <p>Web Informasi Store Toko Pizza</p>
@@ -312,7 +387,7 @@
                                     <div class="col-md-3">
                                         <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                                             <a href="#web-development">
-                                                <figure class="cc-effect"><img src="img/7.png" alt="Image" />
+                                                <figure class="cc-effect"><img src="img/7.png" width="350" height="150px" alt="Image" />
                                                     <figcaption>
                                                         <div class="h4"></div>
                                                         <p>Website Akademi OF Materi Sekolah</p>
@@ -322,7 +397,7 @@
                                         </div>
                                         <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                                             <a href="#web-development">
-                                                <figure class="cc-effect"><img src="img/8.png" height="150px" alt="Image" />
+                                                <figure class="cc-effect"><img src="img/9.png" width="350" height="150px" alt="Image" />
                                                     <figcaption>
                                                         <div class="h4"></div>
                                                         <p>Website SPK Pemilihan Paket Rias Pengantin Sanggar Rias Idean</p>
@@ -359,45 +434,89 @@
                         <div class="tab-pane" id="graphic-design" role="tabpanel">
                             <div class="ml-auto mr-auto">
                                 <div class="row">
-                                    <div class="col-md-6">
+                                    <div class="col-md-3">
                                         <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                                             <a href="#graphic-design">
-                                                <figure class="cc-effect"><img src="images/graphic-design-1.jpg" alt="Image" />
+                                                <figure class="cc-effect"><img src="img/ten6.PNG" width="350px" height="150px" alt="Image" />
                                                     <figcaption>
-                                                        <div class="h4">Triangle Pattern</div>
-                                                        <p>Graphic Design</p>
+                                                        <div class="h4">Dekorasi Tenda</div>
+                                                        <p>Pernikahan</p>
                                                     </figcaption>
                                                 </figure>
                                             </a>
                                         </div>
                                         <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                                             <a href="#graphic-design">
-                                                <figure class="cc-effect"><img src="images/graphic-design-2.jpg" alt="Image" />
+                                                <figure class="cc-effect"><img src="img/ten8.PNG" width="350px" height="150px" alt="Image" />
                                                     <figcaption>
-                                                        <div class="h4">Abstract Umbrella</div>
-                                                        <p>Graphic Design</p>
+                                                        <div class="h4">Dekorasi Tenda</div>
+                                                        <p>Pernikahan</p>
                                                     </figcaption>
                                                 </figure>
                                             </a>
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-md-3">
                                         <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                                             <a href="#graphic-design">
-                                                <figure class="cc-effect"><img src="images/graphic-design-3.jpg" alt="Image" />
+                                                <figure class="cc-effect"><img src="img/ten12.PNG" width="350px" height="150px" alt="Image" />
                                                     <figcaption>
-                                                        <div class="h4">Cube Surface Texture</div>
-                                                        <p>Graphic Design</p>
+                                                        <div class="h4">Dekorasi Tenda </div>
+                                                        <p>Pernikahan</p>
                                                     </figcaption>
                                                 </figure>
                                             </a>
                                         </div>
                                         <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                                             <a href="#graphic-design">
-                                                <figure class="cc-effect"><img src="images/graphic-design-4.jpg" alt="Image" />
+                                                <figure class="cc-effect"><img src="img/ten19.PNG" width="350px" height="150px" alt="Image" />
                                                     <figcaption>
-                                                        <div class="h4">Abstract Line</div>
-                                                        <p>Graphic Design</p>
+                                                        <div class="h4">Dekorasi Tenda</div>
+                                                        <p>Pernikahan</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                            <a href="#graphic-design">
+                                                <figure class="cc-effect"><img src="img/ten20.PNG" width="350px" height="150px" alt="Image" />
+                                                    <figcaption>
+                                                        <div class="h4">Dekorasi Tenda</div>
+                                                        <p>Pernikahan</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                            <a href="#graphic-design">
+                                                <figure class="cc-effect"><img src="img/ten21.PNG" width="350px" height="150px" alt="Image" />
+                                                    <figcaption>
+                                                        <div class="h4">Dekorasi Tenda</div>
+                                                        <p>Pernikahan</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                            <a href="#graphic-design">
+                                                <figure class="cc-effect"><img src="img/ten22.PNG" width="350px" height="150px" alt="Image" />
+                                                    <figcaption>
+                                                        <div class="h4">Dekorasi Tenda</div>
+                                                        <p>Pernikahan</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                            <a href="#graphic-design">
+                                                <figure class="cc-effect"><img src="img/ten23.PNG" width="350px" height="150px" alt="Image" />
+                                                    <figcaption>
+                                                        <div class="h4">Dekorasi Tenda</div>
+                                                        <p>Pernikahan</p>
                                                     </figcaption>
                                                 </figure>
                                             </a>
@@ -409,46 +528,61 @@
                         <div class="tab-pane" id="Photography" role="tabpanel">
                             <div class="ml-auto mr-auto">
                                 <div class="row">
-                                    <div class="col-md-6">
+                                    <div class="col-md-3">
                                         <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                                             <a href="#Photography">
-                                                <figure class="cc-effect"><img src="images/photography-1.jpg" alt="Image" />
-                                                    <figcaption>
-                                                        <div class="h4">Photoshoot</div>
-                                                        <p>Photography</p>
-                                                    </figcaption>
+                                                <figure class="cc-effect"> <iframe src="https://www.youtube.com/embed/l8A5Dz7P6gM" width="350px" height="150px"></iframe>
                                                 </figure>
                                             </a>
                                         </div>
                                         <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                                             <a href="#Photography">
-                                                <figure class="cc-effect"><img src="images/photography-3.jpg" alt="Image" />
-                                                    <figcaption>
-                                                        <div class="h4">Wedding Photoshoot</div>
-                                                        <p>Photography</p>
-                                                    </figcaption>
+                                                <figure class="cc-effect"><iframe src="https://www.youtube.com/embed/Eo-_R3OFAuQ" width="350px" height="150px"></iframe>
                                                 </figure>
                                             </a>
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-md-3">
                                         <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                                             <a href="#Photography">
-                                                <figure class="cc-effect"><img src="images/photography-2.jpg" alt="Image" />
-                                                    <figcaption>
-                                                        <div class="h4">Beach Photoshoot</div>
-                                                        <p>Photography</p>
-                                                    </figcaption>
+                                                <figure class="cc-effect"><iframe src="https://www.youtube.com/embed/Gh3475Vx0eI" width="350px" height="150px"></iframe>
                                                 </figure>
                                             </a>
                                         </div>
                                         <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                                             <a href="#Photography">
-                                                <figure class="cc-effect"><img src="images/photography-4.jpg" alt="Image" />
-                                                    <figcaption>
-                                                        <div class="h4">Nature Photoshoot</div>
-                                                        <p>Photography</p>
-                                                    </figcaption>
+                                                <figure class="cc-effect"><iframe src="https://www.youtube.com/embed/mjIwSsr3MCE" width="350px" height="150px"></iframe>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                            <a href="#Photography">
+                                                <figure class="cc-effect"><iframe src="https://www.youtube.com/embed/RiXb-QVR0Ls" width="350px" height="150px"></iframe>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                            <a href="#Photography">
+                                                <figure class="cc-effect"><iframe src="https://www.youtube.com/embed/RYGPcA4rRUU" width="350px" height="150px"></iframe>
+
+                                                </figure>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                            <a href="#Photography">
+                                                <figure class="cc-effect"><iframe src="https://www.youtube.com/embed/K4FGTnWoJl8" width="350px" height="150px"></iframe>
+
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                            <a href="#Photography">
+                                                <figure class="cc-effect"><iframe src="https://www.youtube.com/embed/S0tSMomn9fM" width="350px" height="150px"></iframe>
+
                                                 </figure>
                                             </a>
                                         </div>
@@ -660,10 +794,7 @@
                                             <div class="ig-thumbnail">
                                                 <img src="img/thumbs/4.jpg" width="200">
                                             </div>
-                                            <div class="col">
-                                                <div class="ig-thumbnail">
-                                                    <img src="img/thumbs/6.jpg" width="200">
-                                                </div>
+                                            
                                             </div>
                                         </div>
                                     </div>
@@ -684,7 +815,7 @@
                         </div>
                     </div>
                     <div class="row justify-content-center">
-                        <div class="col-md-10">
+                        <div class="col-md-5">
 
 
                             <h2 class="papan-skor">0</h2>
@@ -696,24 +827,7 @@
                                 <div class="tanah">
                                     <div class="tikus"></div>
                                 </div>
-                                <div class="tanah">
-                                    <div class="tikus"></div>
-                                </div>
-                                <div class="tanah">
-                                    <div class="tikus"></div>
-                                </div>
-                                <div class="tanah">
-                                    <div class="tikus"></div>
-                                </div>
-                                <div class="tanah">
-                                    <div class="tikus"></div>
-                                </div>
-                                <div class="tanah">
-                                    <div class="tikus"></div>
-                                </div>
-                                <div class="tanah">
-                                    <div class="tikus"></div>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
