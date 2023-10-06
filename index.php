@@ -26,7 +26,7 @@
 <body id="top">
     <header>
         <div class="profile-page sidebar-collapse">
-            <nav class="navbar navbar-expand-lg fixed-top  bg-primary" color-on-scroll="400">
+            <nav class="navbar navbar-expand-lg fixed-top bg-primary" color-on-scroll="400">
                 <div class="container">
                     <div class="navbar-translate"><a class="navbar-brand" href="#">Mochammad Iqshan Augustino</a>
                         <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-bar bar1"></span><span class="navbar-toggler-bar bar2"></span><span class="navbar-toggler-bar bar3"></span></button>
@@ -44,6 +44,8 @@
             </nav>
         </div>
     </header>
+
+
     <div class="page-content">
         <div>
             <div class="profile-page">
@@ -107,10 +109,67 @@
                                         <div class="col-sm-8">Indonesia, English</div>
                                     </div>
                                 </div>
+                            </div></div><hr>
+                  
+      
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12">
+                                <div class="card-body">
+                                       <div class="row">
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
+									<div class="services color-1">
+										<img src="img/dev.png" width="200px" height="100px" alt="">
+										<center><h6><br>Database Developer</h6></center>
+									</div>
+								</div>
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
+									<div class="services color-2">
+										<img src="img/web.png" width="200px" height="100px" alt="">
+										<center><h6><br>Website Developer</h6></center>
+									</div>
+								</div>
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInTop">
+									<div class="services color-3">
+										<img src="img/soft.png" width="200px" height="100px" alt="">
+										<center><h6><br>Software Developer</h6></center>
+									</div>
+								</div>
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInBottom">
+									<div class="services color-4">
+										<img src="img/ap.png" width="200px" height="100px" alt="">
+										<center><h6><br>Application Developer</h6></center>
+									</div>
+								</div><br>	<div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
+									<div class="services color-1">
+										<img src="img/youtuber.png" width="200px" height="100px" alt="">
+										<center><h6><br>Youtuber GAMING</h6></center>
+									</div>
+								</div>
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
+									<div class="services color-2">
+										<img src="img/computer.png" width="200px" height="100px" alt="">
+										<center><h6><br>Networking Developer</h6></center>
+									</div>
+								</div>
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInTop">
+									<div class="services color-3">
+										<img src="img/wedd.jpg" width="200px" height="100px" alt="">
+										<center><h6><br>Dekorasi Pernikahan</h6></center>
+									</div>
+								</div>
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInBottom">
+									<div class="services color-4">
+										<img src="img/wda.jpg" width="200px" height="100px" alt="">
+										<center><h6><br>Service PC / Laptop</h6></center>
+									</div>
+								</div>
+							</div>
+                                </div>
                             </div>
-                        </div>
-                        <hr>
-                        <b><h4 style="text-align: center">Gaji Pegawai Berdasarkan Jam Kerja Perbulan</b></h4>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="card-body">
+                                    <div class="h4 mt-0 title"><b><center>Hitung Gaji Pegawai Berdasarkan Jam Kerja Perbulan</center></b></div>
+                                    
         <form method="post" action="">
             <div style="margin-left: 5%">
                 Nama Karyawan : <input type="text" name="nama" /><br /> <br />
@@ -119,7 +178,7 @@
                  <input type="radio" name="jabatan" value="IT_Back_End_Developer"/> IT Back End Developer 
                 <input type="radio" name="jabatan" value="IT_Full_Stack_Developer"/> IT Full Stack Developer <br /><br />  
                 Jam Kerja (Jam) : <input type="text" name="jam_kerja" /> <br /><br />
-                <input type="submit" name="submit" value="Submit" />
+               <input type="submit" class="button button1" name="submit" value="Submit" />
             </div>
         </form>
  
@@ -159,7 +218,7 @@
  
                     echo "Nama Karyawan  : $nama <br/> ";
                     echo "Jabatan   : $gol <br/> ";
-                    echo "Jam Kerja : $jam_kerja <br/>";
+                    echo "Jam Kerja : $jam_kerja / Hari<br/>";
                     echo "Lembur : $lembur <br/>";
  
                      if ($gol=='IT_Support')
@@ -181,11 +240,7 @@
                 }
             ?>
         </div>
-
-
-                    </div>
-                </div>
-            </div>
+                    </div></div>    </div></div>  </div></div> 
             <div class="section" id="skill">
                 <div class="container">
                     <div class="h4 text-center mb-4 title">Professional Skills</div>
@@ -269,7 +324,7 @@
                                 <div class="col-md-6">
                                     <div class="progress-container progress-primary"><span class="progress-badge">Database</span>
                                         <div class="progress">
-                                            <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div><span class="progress-value">80%</span>
+                                            <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div><span class="progress-value">90%</span>
                                         </div>
                                     </div>
                                 </div>
@@ -304,8 +359,10 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 ml-auto mr-auto">
-                            <div class="h4 text-center mb-4 title">Portfolio</div>
+                            <div class="h4 text-center mb-4 title">MY WORKS</div>
+                          
                             <div class="nav-align-center">
+                            <h5 align="justify">Beriku beberapa foto dan video pekerjaan yang saya lakukan dan projek aplikasi yang saya buat, belum semua saya masukan ke dalam website saya ini</h5>
                                 <ul class="nav nav-pills nav-pills-primary" role="tablist">
                                     <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#web-development" role="tablist"><i class="fa fa-laptop" aria-hidden="true"></i></a></li>
                                     <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#graphic-design" role="tablist"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>
@@ -827,7 +884,7 @@
                                 <div class="tanah">
                                     <div class="tikus"></div>
                                 </div>
-                                
+                               
                             </div>
                         </div>
                     </div>
@@ -909,6 +966,14 @@
             </div>
             </div>
         </div>
+        <script src="https://cdn.rawgit.com/bungfrangki/efeksalju/2a7805c7/green-bintang-jatuh.js" type="text/javascript"></script>
+  <script src="https://cdn.rawgit.com/bungfrangki/efeksalju/2a7805c7/efek-salju-2.js" type="text/javascript"></script>
+  <style type="text/css">
+    * {
+      cursor: url(http://cur.cursors-4u.net/anime/ani-12/ani1159.ani), url(http://cur.cursors-4u.net/anime/ani-12/ani1159.gif), auto !important;
+    }
+  </style><a href="http://www.cursors-4u.com/cursor/2012/01/01/zora-one-piece.html" target="_blank" title="Zora - One Piece"><img src="http://cur.cursors-4u.net/cursor.png" border="0" alt="Zora - One Piece" style="position:absolute; top: 0px; right: 0px;" /></a>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
         <script src="js/core/jquery.3.2.1.min.js?ver=1.1.0"></script>
         <script src="js/core/popper.min.js?ver=1.1.0"></script>
