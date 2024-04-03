@@ -58,7 +58,7 @@
                                     <a href="#"><img src="img/ws.jpeg" alt="Image" /></a>
                                 </div>
                                 <div class="h2 title">MOCHAMMAD IQSHAN AUGUSTINO</div>
-                                <p class="category text-white">Web Developer, Dekorasi Tenda Pelaminan, Youtuber</p><a class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Kontak Saya</a><a class="btn btn-primary" href="https://drive.google.com/file/d/1hHYmk2qybuo9ddw-xqozed3jMMIXNZl_/view?usp=sharing"
+                                <p class="category text-white">Web Developer, Dekorasi Tenda Pelaminan, Youtuber</p><a class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Kontak Saya</a><a class="btn btn-primary" href="https://drive.google.com/file/d/1W00FCpsBUtDFMiG7trdyyxaMJjQWy_pn/view?usp=sharing"
                                     data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Download CV</a>
                             </div>
                         </div>
@@ -80,8 +80,7 @@
                             <div class="col-lg-6 col-md-12">
                                 <div class="card-body">
                                     <div class="h4 mt-0 title">About</div>
-                                    <p align="justify">Nama Saya adalah Mochammad Iqshan Augustino, Saya adalah sarjana komputer (S1) Teknik Informatika Dari Universitas Pembangunan Jaya. Saya menguasai skill di bidang pemprograman website, mobile, Phython, bahasa C, C++,
-                                        database dan Networking. saya memiliki hobby berolaraga pencak silat, Lari, Berenang dan saya juga hobby mengembangkan skill pemprograman website dan mobile. Saya suka menghabiskan waktu libur saya dengan berolaraga.
+                                    <p align="justify"> Seorang Sarjana Teknik Informatika di Universitas Pembangunan Jaya, dengan IPK 3.01/4.00. Seseorang yang mengutamakan ketelitan, bertanggung jawab dan konsisten dalam menyelesaikan setiap pekerjaan. Junior IT di bidang programmer. Ahli dalam menggunakan beberapa bahasa pemprograman. Memiliki komunikasi baik dalam bahasa indonesia dan bahasa inggris, memiliki kemampuan kerjasama tim maupun individual, manajemen waktu, kreatif, integritas tinggi dan mampu beradaptasi. Berdedikasi dan bermotivasi tinggi untuk dapat mengembangkan karir profesional. berkomitmen untuk memberikan kinerja terbaik bagi perusahaan.
                                     </p>
                                 </div>
                             </div>
@@ -90,26 +89,30 @@
                                     <div class="h4 mt-0 title">Basic Information</div>
                                     <div class="row">
                                         <div class="col-sm-4"><strong class="text-uppercase">Age:</strong></div>
-                                        <div class="col-sm-8">23</div>
+                                        <div class="col-sm-8"><b>23</b></div>
                                     </div>
                                     <div class="row mt-3">
                                         <div class="col-sm-4"><strong class="text-uppercase">Email:</strong></div>
-                                        <div class="col-sm-8">iqshan3345@gmail.com</div>
+                                        <div class="col-sm-8"><b>iqshan3345@gmail.com</b></div>
                                     </div>
                                     <div class="row mt-3">
                                         <div class="col-sm-4"><strong class="text-uppercase">Phone:</strong></div>
-                                        <div class="col-sm-8">085781642911</div>
+                                        <div class="col-sm-8"><b>085781642911</b></div>
                                     </div>
                                     <div class="row mt-3">
                                         <div class="col-sm-4"><strong class="text-uppercase">Address:</strong></div>
-                                        <div class="col-sm-8" align="justify">Jl. Masjid Darul Mualimin Rt 03 Rw 07, Kecamatan : Pondok Aren, Kelurahan: Pondok Kacang Timur, Kota : Tangerang Selatan</div>
+                                        <div class="col-sm-8" align="justify"><b>Jl. Masjid Darul Mualimin Rt 03 Rw 07, Kecamatan: Pondok Aren, Kelurahan: Pondok Kacang Timur, Tangerang Selatan </b></div>
                                     </div>
                                     <div class="row mt-3">
                                         <div class="col-sm-4"><strong class="text-uppercase">Language:</strong></div>
-                                        <div class="col-sm-8">Indonesia, English</div>
+                                        <div class="col-sm-8"><b>Indonesia, English</b></div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-sm-4"><strong class="text-uppercase">Gihub:</strong></div>
+                                        <div class="col-sm-4"><a href="https://github.com/iqshan234"><b>Klik MY Github</a></b></div>
                                     </div>
                                 </div>
-                            </div></div><hr>
+                            </div></div><hr>    
                   
       
                         <div class="row">
@@ -172,12 +175,13 @@
                                     
         <form method="post" action="">
             <div style="margin-left: 5%">
-                Nama Karyawan : <input type="text" name="nama" /><br /> <br />
-                Jabatan : <br> <input type="radio" name="jabatan" value="IT_Support"/> IT Support 
-                 <input type="radio" name="jabatan" value="IT_Font_End_Developer"/> IT Font End Developer 
-                 <input type="radio" name="jabatan" value="IT_Back_End_Developer"/> IT Back End Developer 
-                <input type="radio" name="jabatan" value="IT_Full_Stack_Developer"/> IT Full Stack Developer <br /><br />  
-                Jam Kerja (Jam) : <input type="text" name="jam_kerja" /> <br /><br />
+                <b>Nama Karyawan : </b><input type="text" name="nama" /><br /> <br />
+                <b>Jabatan : </b><br> <input type="radio" name="jabatan" value="IT_Support"/><b> IT Support </b> 
+                 <input type="radio" name="jabatan" value="IT_Font_End_Developer"/> <b> IT Font End Developer </b>
+                 <input type="radio" name="jabatan" value="IT_Back_End_Developer"/> <b> IT Back End Developer </b>
+                <input type="radio" name="jabatan" value="IT_Full_Stack_Developer"/> <b> IT Full Stack Developer </b>  <br /><br />  
+              <b>  Jam Kerja (Jam) : </b><input type="text" name="jam_kerja" /> <br /><br/>
+             
                <input type="submit" class="button button1" name="submit" value="Submit" />
             </div>
         </form>
@@ -188,29 +192,30 @@
                     $nama = $_POST['nama'];
                     $gol = $_POST['jabatan'];
                     $jam_kerja = $_POST['jam_kerja'];
+              
  
-                    //gaji
-                    $gaji_pokok_IT_Support = $jam_kerja*4000;
-                    $gaji_pokok_IT_Font_End_Developer = $jam_kerja*5000;
-                    $gaji_pokok_IT_Back_End_Developer = $jam_kerja*6000;
-                    $gaji_pokok_IT_Full_Stack_Developer = $jam_kerja*7500;
+                
+                    $gaji_pokok_IT_Support = $jam_kerja*6000;
+                    $gaji_pokok_IT_Font_End_Developer = $jam_kerja*7000;
+                    $gaji_pokok_IT_Back_End_Developer = $jam_kerja*8000;
+                    $gaji_pokok_IT_Full_Stack_Developer = $jam_kerja*9000;
  
-                    //perhitungan untuk jam lembur
-                    if($jam_kerja <= 48){
+                   
+                    if($jam_kerja <= 24){
                         $jam = $jam_kerja;
                         $lembur = 0;
                     }else{
-                        $jam =  48;
-                        $lembur = ($jam_kerja - $jam) * 3000;
+                        $jam =  24;
+                        $lembur = ($jam_kerja - $jam) * 5000;
                     }
  
-                    //gaji lembur
-                    $gaji_lembur_IT_Support = 15000 * $lembur;
-                    $gaji_lembur_IT_Font_End_Developer = 20000 * $lembur;
-                    $gaji_lembur_IT_Back_End_Developer = 25500 * $lembur;
-                    $gaji_lembur_IT_Full_Stack_Developer = 30150 * $lembur;
+                   
+                    $gaji_lembur_IT_Support = 15000. * $lembur;
+                    $gaji_lembur_IT_Font_End_Developer = 20000. * $lembur;
+                    $gaji_lembur_IT_Back_End_Developer = 25500. * $lembur;
+                    $gaji_lembur_IT_Full_Stack_Developer = 30150. * $lembur;
  
-                    //gaji akhir yang diterima
+                 
                     $gaji_IT_Support = $gaji_pokok_IT_Support + $gaji_lembur_IT_Support ;
                     $gaji_IT_Font_End_Developer = $gaji_pokok_IT_Font_End_Developer + $gaji_lembur_IT_Font_End_Developer ;
                     $gaji_IT_Back_End_Developer = $gaji_pokok_IT_Back_End_Developer + $gaji_lembur_IT_Back_End_Developer ;
@@ -218,7 +223,7 @@
  
                     echo "Nama Karyawan  : $nama <br/> ";
                     echo "Jabatan   : $gol <br/> ";
-                    echo "Jam Kerja : $jam_kerja / Hari<br/>";
+                    echo "Jam Kerja : $jam_kerja Jam / Hari<br/>";
                     echo "Lembur : $lembur <br/>";
  
                      if ($gol=='IT_Support')
@@ -248,14 +253,14 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <div class="progress-container progress-primary"><span class="progress-badge">HTML</span>
+                                    <div class="progress-container progress-primary"><span class="progress-badge"><b>HTML</b></span>
                                         <div class="progress">
                                             <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div><span class="progress-value">100%</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="progress-container progress-primary"><span class="progress-badge">CSS (Cascading Style Sheets)</span>
+                                    <div class="progress-container progress-primary"><span class="progress-badge"><b>CSS (Cascading Style Sheets)</b></span>
                                         <div class="progress">
                                             <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 95%;"></div><span class="progress-value">95%</span>
                                         </div>
@@ -348,6 +353,24 @@
                                             <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div><span class="progress-value">90%</span>
                                         </div>
                                     </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="progress-container progress-primary"><span class="progrwss-badge">Node JS</span>
+                                    <div class="progress">
+                                    <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div><span class="progress-value">70%</span>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                    <div class="progress-container progress-primary"><span class="progrwss-badge">Mikrotik</span>
+                                    <div class="progress">
+                                    <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div><span class="progress-value">85%</span>
+                                        </div>
+                                    </div>
+                                    </div>   
+
+                                </div>
+
                                 </div>
                             </div>
                         </div>
@@ -463,6 +486,96 @@
                                             </a>
                                         </div>
                                     </div>
+                                    <!--  -->
+                                    <div class="col-md-3">
+                                        <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                            <a href="#web-development">
+                                                <figure class="cc-effect"><img src="img/s.png" width="350" height="150px" alt="Image" />
+                                                    <figcaption>
+                                                        <div class="h4"></div>
+                                                        <p>Website Toko Pakaian Baju & Celana Online Shop</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                            <a href="#web-development">
+                                                <figure class="cc-effect"><img src="img/m.png" width="350" height="150px" alt="Image" />
+                                                    <figcaption>
+                                                        <div class="h4"></div>
+                                                        <p>Website Tiket Parkir & Pembayaran Untuk Perusahan MiniGold</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                            <a href="#web-development">
+                                                <figure class="cc-effect"><img src="img/f.png" width="350" height="150px" alt="Image" />
+                                                    <figcaption>
+                                                        <div class="h4"></div>
+                                                        <p>Website Informasi Menu Makanan Rise Coking Chicken</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                            <a href="#web-development">
+                                                <figure class="cc-effect"><img src="img/un1.png" width="350" height="150px" alt="Image" />
+                                                    <figcaption>
+                                                        <div class="h4"></div>
+                                                        <p>Website Undangan Pernikahan Alldy & Ikka Sanggar Rias Idean</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                            <a href="#web-development">
+                                                <figure class="cc-effect"><img src="img/s1.png" width="350" height="150px" alt="Image" />
+                                                    <figcaption>
+                                                        <div class="h4"></div>
+                                                        <p>Website Pemesanan Paket Rias Pengantin Sanggar Rias Idean</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                            <a href="#web-development">
+                                                <figure class="cc-effect"><img src="img/un.png" width="350" height="150px" alt="Image" />
+                                                    <figcaption>
+                                                        <div class="h4"></div>
+                                                        <p>Website Undangan Pernikahan Bia & Anang </p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                            <a href="#web-development">
+                                                <figure class="cc-effect"><img src="img/un2.png" width="350" height="150px" alt="Image" />
+                                                    <figcaption>
+                                                        <div class="h4"></div>
+                                                        <p>Website Undangan Pernikahan Morizka & Umrah, Sanggar Rias Idean</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                            <a href="#web-development">
+                                                <figure class="cc-effect"><img src="img/un3.png" width="350" height="150px" alt="Image" />
+                                                    <figcaption>
+                                                        <div class="h4"></div>
+                                                        <p>Website Undangan Perniakhan, Sanggar Rias Idean</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!--  -->
                                     <!-- <div class="col-md-3">
                                         <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                                             <a href="#web-development">
@@ -733,7 +846,7 @@
                             <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
                                 <div class="card-body cc-education-header">
                                     <p> September 2018 - February 2023</p>
-                                    <div class="h5">Universitas Pembangunan Jayaa</div>
+                                    <div class="h5">Universitas Pembangunan Jaya</div>
                                 </div>
                             </div>
                             <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
